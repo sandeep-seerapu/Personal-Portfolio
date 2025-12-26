@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seerapu Sai Sandeep | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Your<span>Portfolio</span></div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+  </header>
+
+  <section id="home" class="section hero">
+    <div class="hero-text">
+      <p class="hero-tag">Frontend Web Developer</p>
+      <h1>Hi, I'm <span>Seerapu Sai Sandeep</span></h1>
+      <h2>Building clean and responsive web experiences.</h2>
+      <p>
+        I build responsive websites using HTML, CSS, and JavaScript and love
+        turning ideas into real projects.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn outline">Contact</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Your profile photo" class="hero-img" />
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+      I am a web development enthusiast from Visakhapatnam, India, focusing on
+      building clean and responsive web interfaces. I enjoy learning new
+      technologies and creating practical projects.
+    </p>
+    <p class="section-text">
+      My interests include frontend development, problem solving, and building
+      projects that are useful in real world scenarios.
+    </p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">C++</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Git & GitHub</div>
+      
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          A responsive portfolio website built with HTML, CSS, and JavaScript to
+          showcase my skills and projects.
+        </p>
+        <ul>
+          <li>Dark / light mode toggle</li>
+          <li>Smooth navigation between sections</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" target="_blank">Source Code</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>AI Resume Analyzer</h3>
+        <p>
+          Python based tool to parse and analyze multiple resumes against a
+          given job description and highlight best matches.
+        </p>
+        <ul>
+          <li>Text processing and scoring logic</li>
+          <li>Helps shortlist resumes faster</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/sandeep-seerapu/AI_Resume_Analyser" target="_blank">Source Code</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Tourism Management System</h3>
+        <p>
+          Java based tourism management system with a graphical user interface
+          using AWT for basic booking operations.
+        </p>
+        <ul>
+          <li>Customer and booking management</li>
+          <li>Simple desktop UI for admin</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/sandeep-seerapu/Tourism-Management-System-project" target="_blank">Source Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-text">
+      Interested in working together or have a question? Feel free to reach out.
+    </p>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn primary">Send Message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Seerapu Sai Sandeep. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/sandeep-seerapu" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/seerapu-sai-sandeep-089319286" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
